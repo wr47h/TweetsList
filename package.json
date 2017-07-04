@@ -4,6 +4,7 @@
   "description": "twitter search",
   "main": "index.js",
   "dependencies": {
+    "requirejs": "2.3.3",
     "twitter": "1.7.1",
     "twitter-node-client": "^0.0.6"
   },
