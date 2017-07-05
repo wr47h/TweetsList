@@ -1,9 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 {% load staticfiles %}
 <html>
   <head>
     <title>TwitterList</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/bundle.js' %}"></script>
+    <!--<script src="{% static 'js/index.js' %}"></script>-->
   </head>
   <body>
     <form method="POST" class="post_form">
@@ -11,12 +13,12 @@
         {{ form.as_p }}
         <button type="submit">Submit</button>
     </form>
+  <div id="tweets">
     {% for tweet, tweet_id in tweet_list %}
     <p>{{tweet}}</p>
     <br/>
     {% endfor %}
+  </div>
     <br/>
-    <script src="{% static 'js/bundle.js' %}"></script>
-    <script src="{% static 'js/index.js' %}"></script>
   </body>
 </html>
