@@ -6,4 +6,6 @@ ToDo
      * ~~Access DOM through index.js to insert tweets~~  
      
    **Solution** - 
-     * **None**, i.e make a separate Node.js project if needed. No need to merge both Django backend and Nodejs.
+     * **None**, i.e make a separate Node.js project if needed. No need to merge both Django backend and Nodejs.  
+     
+   ### Closed
