@@ -17,7 +17,7 @@ def tweets_list(request):
             results = api.search(q=name, rpp=50, count=50, show_user=True)
             #print(results[0])
             for tweet in results:
-                tweet_list.append((tweet.text.encode("utf-8", errors='ignore'), tweet.id))
+                tweet_list.append((tweet.text.encode("utf-8", errors='ignore'), tweet.id, tweet.user.name))
     else:
         form = PostForm()
     return render(request, 'tweetslist/base.html', {'form': form, 'tweet_list': tweet_list})
