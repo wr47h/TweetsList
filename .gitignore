@@ -2,3 +2,4 @@
 config.py
 node_modules
 bundle.js
+require.js
