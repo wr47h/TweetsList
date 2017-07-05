@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{% static 'js/bundle.js' %}"></script>
     <!--<script src="{% static 'js/index.js' %}"></script>-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
     <form method="POST" class="post_form">
@@ -14,9 +15,11 @@
         <button type="submit">Submit</button>
     </form>
   <div id="tweets">
-    {% for tweet, tweet_id in tweet_list %}
-    <p>{{tweet}}</p>
+    {% for tweet, tweet_id, user_name in tweet_list %}
+  <div class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
+    <p><b>{{user_name}}</b>:{{tweet}}</p>
     <br/>
+  </div>
     {% endfor %}
   </div>
     <br/>
