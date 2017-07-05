@@ -11,9 +11,7 @@ An app that displays recent tweets as per entered query word.
 5. `twitter` npm package (Check [here](https://www.npmjs.com/package/twitter "twitter-npm") for details)
 
 ## Usage
-1. `cd` to `tweetslist/static/js` and run the following in the terminal  
-   ```browserify index.js -o bundle.js```
-2. `cd` to the root of the project  
-3. Run the following in the terminal   
+1. `cd` to the root of the project  
+2. Run the following in the terminal   
    ```python manage.py runserver```
-4. Head to [localhost](http://localhost:8000 "localhost")
+3. Head to [localhost](http://localhost:8000 "localhost")
