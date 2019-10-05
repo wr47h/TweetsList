@@ -9,3 +9,5 @@ ToDo
      * **None**, i.e make a separate Node.js project if needed. No need to merge both Django backend and Nodejs.  
      
    ### Closed
+
+2. Try using Socket.IO for continuous updates.
